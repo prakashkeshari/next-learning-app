@@ -1,0 +1,19 @@
+.container {
+  max-width: 800px;      /* Recommended blog width */
+  margin: 0 auto;        /* Center horizontally */
+  padding: 0 1.5rem;     /* Small side padding */
+}
+
+.main {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding-top: 3rem;
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding: 0 1rem;
+    max-width: 100%;
+  }
+}
