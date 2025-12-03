@@ -18,22 +18,6 @@ export default function Page() {
         </Link>
       </section>
 
-      {/* Features Section */}
-      <section className={styles.features}>
-        <div className={styles.card}>
-          <h3>🚀 Next.js Mastery</h3>
-          <p>Deep dive into App Router, Server Components, and advanced patterns.</p>
-        </div>
-        <div className={styles.card}>
-          <h3>⚛️ React Ecosystem</h3>
-          <p>Learn state management, hooks, and performance optimization techniques.</p>
-        </div>
-        <div className={styles.card}>
-          <h3>🟢 Node.js Backend</h3>
-          <p>Build scalable APIs and microservices with Node.js and NestJS.</p>
-        </div>
-      </section>
-
       {/* Blog Preview Section */}
       <section className={styles.blogPreview}>
         <h2 className={styles.sectionTitle}>Latest Articles</h2>
@@ -59,18 +43,22 @@ export default function Page() {
         </div>
       </section>
 
-      {/* Contact Section */}
-      <section className={styles.contact}>
-        <h2 className={styles.sectionTitle}>Get in Touch</h2>
-
-        <form className={styles.contactForm} action="/contact" method="get">
-          <p>Have questions? Want to collaborate? We'd love to hear from you.</p>
-
-          <Link href="/contact" className={styles.contactButton}>
-            Go to Contact Form
-          </Link>
-        </form>
+      {/* Features Section */}
+      <section className={styles.features}>
+        <div className={styles.card}>
+          <h3>🚀 Next.js Mastery</h3>
+          <p>Deep dive into App Router, Server Components, and advanced patterns.</p>
+        </div>
+        <div className={styles.card}>
+          <h3>⚛️ React Ecosystem</h3>
+          <p>Learn state management, hooks, and performance optimization techniques.</p>
+        </div>
+        <div className={styles.card}>
+          <h3>🟢 Node.js Backend</h3>
+          <p>Build scalable APIs and microservices with Node.js and NestJS.</p>
+        </div>
       </section>
+
     </div>
   );
 }

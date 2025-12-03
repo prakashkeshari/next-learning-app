@@ -1,0 +1,22 @@
+.title {
+    font-size: 2rem;
+    font-weight: 900;
+    margin: 8;
+    color: var(--background);
+}
+
+.subTitle {
+    font-size: 1.4rem;
+    font-weight: 500;
+    margin: 8;
+    color: var(--background);
+
+}
+
+.body {
+    font-size: 1rem;
+    font-weight: 100;
+    margin: 8;
+    color: var(--background);
+
+}

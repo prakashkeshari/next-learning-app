@@ -7,6 +7,7 @@ export default function ContactPage() {
         name: "",
         email: "",
         message: "",
+        phone: "",
     });
 
     const [loading, setLoading] = useState(false);
@@ -33,7 +34,7 @@ export default function ContactPage() {
 
             if (res.ok) {
                 setResponseMsg("Contact Saved Successfully!");
-                setFormData({ name: "", email: "", message: "" });
+                setFormData({ name: "", email: "", phone: "", message: "" });
             } else {
                 setResponseMsg(data.error || "Something went wrong");
             }
@@ -64,6 +65,15 @@ export default function ContactPage() {
                     name="email"
                     type="email"
                     value={formData.email}
+                    onChange={handleChange}
+                    required
+                />
+
+                <label className="block mb-2">Phone</label>
+                <input
+                    className="w-full border p-2 rounded mb-4 text-gray-900"
+                    name="phone"
+                    value={formData.phone}
                     onChange={handleChange}
                     required
                 />
