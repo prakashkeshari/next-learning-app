@@ -4,6 +4,7 @@ import styles from './home_page.module.css';
 export default function Page() {
   return (
     <div className={styles.container}>
+
       {/* Hero Section */}
       <section className={styles.hero}>
         <h1 className={styles.title}>
@@ -56,6 +57,19 @@ export default function Page() {
             </div>
           </div>
         </div>
+      </section>
+
+      {/* Contact Section */}
+      <section className={styles.contact}>
+        <h2 className={styles.sectionTitle}>Get in Touch</h2>
+
+        <form className={styles.contactForm} action="/contact" method="get">
+          <p>Have questions? Want to collaborate? We'd love to hear from you.</p>
+
+          <Link href="/contact" className={styles.contactButton}>
+            Go to Contact Form
+          </Link>
+        </form>
       </section>
     </div>
   );

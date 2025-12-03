@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import styles from "./sidebar.module.css"; 
+import styles from "./sidebar.module.css";
 
 export default function Sidebar() {
   const pathname = usePathname();
@@ -28,6 +28,10 @@ export default function Sidebar() {
 
         <li className={isActive("/blogs") ? styles.active : ""}>
           <Link href="/blogs">Blogs</Link>
+        </li>
+
+        <li className={isActive("/contact") ? styles.active : ""}>
+          <Link href="/contact">Contact</Link>
         </li>
       </ul>
     </aside>

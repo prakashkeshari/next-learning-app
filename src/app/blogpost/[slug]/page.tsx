@@ -23,7 +23,7 @@ export default async function BlogPostPage({ params }: Props) {
     <div className={styles.container}>
       <main className={styles.main}>
         <h1 className="text-4xl text-black font-bold">{blog.title}</h1>
-        <div className="text-center text-gray-600">By {blog.author}</div>
+        <div className="text-center text-gray-600 mt-4 mb-4">By {blog.author}</div>
         <div className="text-left text-gray-800">{blog.content}</div>
       </main>
     </div>
