@@ -2,14 +2,14 @@ import styles from '../styles/About.module.css';
 
 export default function Page() {
   return (
-    <div className={styles.content}>
+    <div className={styles.container}>
       <h1 className={styles.title}>About Page</h1>
       <h2 className={styles.subTitle}> This is the About page content</h2>
 
       <p className={styles.body}>
         Lorem Ipsum is simply dummy text of the printing
         and typesetting industry. Lorem Ipsum has been the
-        industry's standard dummy text ever since the 1500s,
+        industry&apos;s standard dummy text ever since the 1500s,
         when an unknown printer took a galley of type and
         scrambled it to make a type specimen book.
         It has survived not only five centuries,
@@ -32,7 +32,7 @@ export default function Page() {
       <p className={styles.body}>
         Lorem Ipsum is simply dummy text of the printing
         and typesetting industry. Lorem Ipsum has been the
-        industry's standard dummy text ever since the 1500s,
+        industry&apos;s standard dummy text ever since the 1500s,
         when an unknown printer took a galley of type and
         scrambled it to make a type specimen book.
         It has survived not only five centuries,
@@ -43,7 +43,7 @@ export default function Page() {
         with desktop publishing software like Aldus
         PageMaker including versions of Lorem Ipsum.
       </p>
-      <ul className="list-disc list-inside text-black ml-5 mt-2 ">
+      <ul className={styles.list}>
         <li>EDUCATION</li>
         <li>FINANCE</li>
         <li>HEALTHCARE</li>
@@ -57,7 +57,7 @@ export default function Page() {
       <p className={styles.body}>
         Lorem Ipsum is simply dummy text of the printing
         and typesetting industry. Lorem Ipsum has been the
-        industry's standard dummy text ever since the 1500s,
+        industry&apos;s standard dummy text ever since the 1500s,
         when an unknown printer took a galley of type and
         scrambled it to make a type specimen book.
         It has survived not only five centuries,

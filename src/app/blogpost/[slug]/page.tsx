@@ -13,7 +13,7 @@ export default async function BlogPostPage({ params }: Props) {
     return (
       <div className={styles.container}>
         <main className={styles.main}>
-          <h1 className="text-4xl text-black font-bold">Blog Post Not Found</h1>
+          <h1 className={styles.title}>Blog Post Not Found</h1>
         </main>
       </div>
     );
@@ -22,9 +22,9 @@ export default async function BlogPostPage({ params }: Props) {
   return (
     <div className={styles.container}>
       <main className={styles.main}>
-        <h1 className="text-4xl text-black font-bold">{blog.title}</h1>
-        <div className="text-center text-gray-600 mt-4 mb-4">By {blog.author}</div>
-        <div className="text-left text-gray-800">{blog.content}</div>
+        <h1 className={styles.title}>{blog.title}</h1>
+        <div className={styles.meta}>By {blog.author}</div>
+        <div className={styles.content}>{blog.content}</div>
       </main>
     </div>
   );

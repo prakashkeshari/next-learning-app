@@ -1,13 +1,11 @@
-
-import * as fs from 'fs';
-import { NextResponse } from 'next/server';
-import { BlogPost, getBlogPosts } from "../route";
+import { NextRequest, NextResponse } from 'next/server';
+import { BlogPost, getAllBlogs } from "../route";
 
 export async function GET(
-    request: Request,
-    { params }: { params: { slug: string } }
+    request: NextRequest,
+    context: { params: Promise<{ slug: string }> }
 ) {
-    const { slug } = params;
+    const { slug } = await context.params;
     try {
         const blogs = await getBlogPost(slug);
         return NextResponse.json(blogs);
@@ -19,7 +17,7 @@ export async function GET(
 
 
 export const getBlogPost = async (slug: string): Promise<BlogPost | null> => {
-    const blogs = await getBlogPosts();
+    const blogs = await getAllBlogs();
     return blogs.find((blog) => blog.slug === slug) || null;
 };
 

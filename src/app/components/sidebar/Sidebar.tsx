@@ -19,11 +19,11 @@ export default function Sidebar() {
         <li className={pathname.startsWith("/about") ? styles.active : ""}>
           <Link href="/about">About</Link>
 
-          <ul className={styles.subMenu}>
+          {/* <ul className={styles.subMenu}>
             <li className={isActive("/about/detail") ? styles.active : ""}>
               <Link href="/about/detail">Detail</Link>
             </li>
-          </ul>
+          </ul> */}
         </li>
 
         <li className={isActive("/blogs") ? styles.active : ""}>
